@@ -7,9 +7,13 @@ prompt --install
 @@application/shared_components/navigation/lists/navigation_bar.sql
 @@application/shared_components/navigation/lists/user_interface.sql
 @@application/shared_components/navigation/lists/access_control.sql
+@@application/shared_components/navigation/lists/application_configuration.sql
 @@application/shared_components/files/icons_app_icon_32_png.sql
 @@application/shared_components/files/icons_app_icon_192_png.sql
 @@application/shared_components/files/icons_app_icon_512_png.sql
+@@application/shared_components/files/js_app105_js.sql
+@@application/shared_components/files/js_app105_min_js.sql
+@@application/shared_components/files/js_app105_js_map.sql
 @@application/plugin_settings.sql
 @@application/shared_components/security/authorizations/administration_rights.sql
 @@application/shared_components/security/authorizations/reader_rights.sql
@@ -18,10 +22,13 @@ prompt --install
 @@application/shared_components/security/app_access_control/contributor.sql
 @@application/shared_components/security/app_access_control/reader.sql
 @@application/shared_components/navigation/navigation_bar.sql
+@@application/shared_components/logic/application_items/a_help_url.sql
+@@application/shared_components/logic/application_computations/p0_help_url.sql
 @@application/shared_components/logic/application_settings.sql
 @@application/shared_components/navigation/tabs/standard.sql
 @@application/shared_components/navigation/tabs/parent.sql
 @@application/shared_components/user_interface/lovs/access_roles.sql
+@@application/shared_components/user_interface/lovs/ait_specialty_name.sql
 @@application/shared_components/user_interface/lovs/desktop_theme_styles.sql
 @@application/shared_components/user_interface/lovs/email_username_format.sql
 @@application/shared_components/user_interface/lovs/user_theme_preference.sql
@@ -110,6 +117,10 @@ prompt --install
 @@application/user_interfaces/combined_files.sql
 @@application/pages/page_00000.sql
 @@application/pages/page_00001.sql
+@@application/pages/page_00002.sql
+@@application/pages/page_00004.sql
+@@application/pages/page_00005.sql
+@@application/pages/page_01001.sql
 @@application/pages/page_09999.sql
 @@application/pages/page_10000.sql
 @@application/pages/page_10010.sql
@@ -118,4 +129,5 @@ prompt --install
 @@application/pages/page_10022.sql
 @@application/pages/page_10023.sql
 @@application/pages/page_10024.sql
+@@application/pages/page_10030.sql
 @@application/end_environment.sql

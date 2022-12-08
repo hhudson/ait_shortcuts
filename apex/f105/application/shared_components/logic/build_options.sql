@@ -30,6 +30,13 @@ wwv_flow_imp_shared.create_build_option(
 ,p_feature_identifier=>'APPLICATION_THEME_STYLE_SELECTION'
 ,p_build_option_comment=>'Allow administrators to select a default color scheme (theme style) for the application. Administrators can also choose to allow end users to choose their own theme style. '
 );
+wwv_flow_imp_shared.create_build_option(
+ p_id=>wwv_flow_imp.id(19762488214686232)
+,p_build_option_name=>'Feature: Configuration Options'
+,p_build_option_status=>'INCLUDE'
+,p_feature_identifier=>'APPLICATION_CONFIGURATION'
+,p_build_option_comment=>'Allow application administrators to enable or disable specific functionality, associated with an Oracle APEX build option, from within the application.'
+);
 wwv_flow_imp.component_end;
 end;
 /

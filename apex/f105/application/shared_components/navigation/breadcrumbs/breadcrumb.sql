@@ -27,6 +27,12 @@ wwv_flow_imp_shared.create_menu_option(
 ,p_link=>'f?p=&APP_ID.:10000:&APP_SESSION.::&DEBUG.:::'
 ,p_page_id=>10000
 );
+wwv_flow_imp_shared.create_menu_option(
+ p_id=>wwv_flow_imp.id(19848156487133585)
+,p_short_name=>'ait'
+,p_link=>'f?p=&APP_ID.:4:&APP_SESSION.::&DEBUG.:::'
+,p_page_id=>4
+);
 wwv_flow_imp.component_end;
 end;
 /

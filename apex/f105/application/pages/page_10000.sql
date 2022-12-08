@@ -29,7 +29,7 @@ wwv_flow_imp_page.create_page(
 '<p>Access to this page should be limited to Administrators only.</p>'))
 ,p_page_component_map=>'03'
 ,p_last_updated_by=>'HAYDEN'
-,p_last_upd_yyyymmddhh24miss=>'20221207192008'
+,p_last_upd_yyyymmddhh24miss=>'20221208185500'
 );
 wwv_flow_imp_page.create_page_plug(
  p_id=>wwv_flow_imp.id(19736656346196836)
@@ -188,6 +188,20 @@ wwv_flow_imp_page.create_page_plug(
 ,p_plug_source_type=>'NATIVE_LIST'
 ,p_list_template_id=>wwv_flow_imp.id(19641868479196291)
 ,p_plug_query_num_rows=>15
+);
+wwv_flow_imp_page.create_page_plug(
+ p_id=>wwv_flow_imp.id(19772332534686289)
+,p_plug_name=>'Application Configuration'
+,p_region_template_options=>'#DEFAULT#:t-Region--noPadding:t-Region--scrollBody'
+,p_component_template_options=>'#DEFAULT#:u-colors'
+,p_escape_on_http_output=>'Y'
+,p_plug_template=>wwv_flow_imp.id(19585991816196251)
+,p_plug_display_sequence=>70
+,p_list_id=>wwv_flow_imp.id(19771686093686287)
+,p_plug_source_type=>'NATIVE_LIST'
+,p_list_template_id=>wwv_flow_imp.id(19641868479196291)
+,p_plug_query_num_rows=>15
+,p_required_patch=>wwv_flow_imp.id(19762488214686232)
 );
 wwv_flow_imp_page.create_page_button(
  p_id=>wwv_flow_imp.id(19740511001196841)

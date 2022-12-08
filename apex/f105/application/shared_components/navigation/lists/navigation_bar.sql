@@ -17,6 +17,15 @@ wwv_flow_imp_shared.create_list(
 ,p_list_status=>'PUBLIC'
 );
 wwv_flow_imp_shared.create_list_item(
+ p_id=>wwv_flow_imp.id(19817163065751019)
+,p_list_item_display_sequence=>5
+,p_list_item_link_text=>'Help'
+,p_list_item_link_target=>'f?p=&APP_ID.:1001:&SESSION.::&DEBUG.:1001:P1001_PAGE_ID:&APP_PAGE_ID.:'
+,p_list_item_icon=>'fa-blind'
+,p_list_item_icon_attributes=>'data-id="pageHelp"'
+,p_list_item_current_type=>'TARGET_PAGE'
+);
+wwv_flow_imp_shared.create_list_item(
  p_id=>wwv_flow_imp.id(19734604657196831)
 ,p_list_item_display_sequence=>10
 ,p_list_item_link_text=>'&APP_USER.'

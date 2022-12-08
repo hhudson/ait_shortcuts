@@ -27,7 +27,8 @@ wwv_flow_imp_shared.create_user_interface(
 ,p_navigation_list_id=>wwv_flow_imp.id(19489324010196173)
 ,p_navigation_list_position=>'SIDE'
 ,p_navigation_list_template_id=>wwv_flow_imp.id(19646615352196295)
-,p_nav_list_template_options=>'#DEFAULT#:t-TreeNav--styleA:js-navCollapsed--hidden'
+,p_nav_list_template_options=>'#DEFAULT#:js-defaultCollapsed:js-navCollapsed--hidden:t-TreeNav--styleA'
+,p_javascript_file_urls=>'#APP_FILES#js/app105#MIN#.js'
 ,p_nav_bar_type=>'LIST'
 ,p_nav_bar_list_id=>wwv_flow_imp.id(19683498172196353)
 ,p_nav_bar_list_template_id=>wwv_flow_imp.id(19646215117196294)

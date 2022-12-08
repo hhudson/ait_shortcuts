@@ -1,0 +1,250 @@
+prompt --application/pages/page_00004
+begin
+--   Manifest
+--     PAGE: 00004
+--   Manifest End
+wwv_flow_imp.component_begin (
+ p_version_yyyy_mm_dd=>'2022.04.12'
+,p_release=>'22.1.6'
+,p_default_workspace_id=>9690978936188613
+,p_default_application_id=>105
+,p_default_id_offset=>0
+,p_default_owner=>'ILA'
+);
+wwv_flow_imp_page.create_page(
+ p_id=>4
+,p_user_interface_id=>wwv_flow_imp.id(19683716137196355)
+,p_name=>'ait'
+,p_alias=>'AIT'
+,p_step_title=>'ait'
+,p_autocomplete_on_off=>'OFF'
+,p_page_template_options=>'#DEFAULT#'
+,p_protection_level=>'C'
+,p_help_text=>'this page is for reviewing doctor specialities'
+,p_page_component_map=>'18'
+,p_last_updated_by=>'HAYDEN'
+,p_last_upd_yyyymmddhh24miss=>'20221208212842'
+);
+wwv_flow_imp_page.create_page_plug(
+ p_id=>wwv_flow_imp.id(19841626704133574)
+,p_plug_name=>'ait'
+,p_region_template_options=>'#DEFAULT#'
+,p_plug_template=>wwv_flow_imp.id(19581355382196249)
+,p_plug_display_sequence=>10
+,p_query_type=>'TABLE'
+,p_query_table=>'AIT_DOCTORS'
+,p_include_rowid_column=>false
+,p_plug_source_type=>'NATIVE_IR'
+,p_prn_page_header=>'ait'
+);
+wwv_flow_imp_page.create_worksheet(
+ p_id=>wwv_flow_imp.id(19841737637133574)
+,p_name=>'ait'
+,p_max_row_count_message=>'The maximum row count for this report is #MAX_ROW_COUNT# rows.  Please apply a filter to reduce the number of records in your query.'
+,p_no_data_found_message=>'No data found.'
+,p_base_pk1=>'ID'
+,p_pagination_type=>'ROWS_X_TO_Y'
+,p_pagination_display_pos=>'BOTTOM_RIGHT'
+,p_report_list_mode=>'TABS'
+,p_lazy_loading=>false
+,p_show_detail_link=>'C'
+,p_download_formats=>'CSV:HTML:XLSX:PDF'
+,p_enable_mail_download=>'Y'
+,p_detail_link=>'f?p=&APP_ID.:5:&SESSION.::&DEBUG.:RP:P5_ID:\#ID#\'
+,p_detail_link_text=>'<span aria-label="Edit"><span class="fa fa-edit" aria-hidden="true" title="Edit"></span></span>'
+,p_owner=>'HAYDEN'
+,p_internal_uid=>19841737637133574
+);
+wwv_flow_imp_page.create_worksheet_column(
+ p_id=>wwv_flow_imp.id(19842108201133578)
+,p_db_column_name=>'ROWID'
+,p_display_order=>0
+,p_column_identifier=>'A'
+,p_column_label=>'ROWID'
+,p_allow_sorting=>'N'
+,p_allow_filtering=>'N'
+,p_allow_highlighting=>'N'
+,p_allow_ctrl_breaks=>'N'
+,p_allow_aggregations=>'N'
+,p_allow_computations=>'N'
+,p_allow_charting=>'N'
+,p_allow_group_by=>'N'
+,p_allow_pivot=>'N'
+,p_column_type=>'OTHER'
+,p_display_text_as=>'HIDDEN_ESCAPE_SC'
+,p_heading_alignment=>'LEFT'
+,p_tz_dependent=>'N'
+,p_rpt_show_filter_lov=>'N'
+,p_use_as_row_header=>'N'
+);
+wwv_flow_imp_page.create_worksheet_column(
+ p_id=>wwv_flow_imp.id(19842568189133579)
+,p_db_column_name=>'ID'
+,p_display_order=>0
+,p_column_identifier=>'B'
+,p_column_label=>'ID'
+,p_column_type=>'NUMBER'
+,p_display_text_as=>'HIDDEN_ESCAPE_SC'
+,p_heading_alignment=>'LEFT'
+,p_tz_dependent=>'N'
+,p_use_as_row_header=>'N'
+);
+wwv_flow_imp_page.create_worksheet_column(
+ p_id=>wwv_flow_imp.id(19842961443133579)
+,p_db_column_name=>'SPECIALTY_ID'
+,p_display_order=>3
+,p_column_identifier=>'C'
+,p_column_label=>'Specialty'
+,p_column_type=>'STRING'
+,p_display_text_as=>'LOV_ESCAPE_SC'
+,p_heading_alignment=>'LEFT'
+,p_tz_dependent=>'N'
+,p_rpt_named_lov=>wwv_flow_imp.id(19829253902133558)
+,p_use_as_row_header=>'N'
+);
+wwv_flow_imp_page.create_worksheet_column(
+ p_id=>wwv_flow_imp.id(19843368426133580)
+,p_db_column_name=>'FIRST_NAME'
+,p_display_order=>4
+,p_column_identifier=>'D'
+,p_column_label=>'First Name'
+,p_column_type=>'STRING'
+,p_heading_alignment=>'LEFT'
+,p_tz_dependent=>'N'
+,p_use_as_row_header=>'N'
+);
+wwv_flow_imp_page.create_worksheet_column(
+ p_id=>wwv_flow_imp.id(19843789809133580)
+,p_db_column_name=>'LAST_NAME'
+,p_display_order=>5
+,p_column_identifier=>'E'
+,p_column_label=>'Last Name'
+,p_column_type=>'STRING'
+,p_heading_alignment=>'LEFT'
+,p_tz_dependent=>'N'
+,p_use_as_row_header=>'N'
+);
+wwv_flow_imp_page.create_worksheet_column(
+ p_id=>wwv_flow_imp.id(19844113719133580)
+,p_db_column_name=>'ACCEPTING_PATIENTS_YN'
+,p_display_order=>6
+,p_column_identifier=>'F'
+,p_column_label=>'Accepting Patients '
+,p_column_type=>'STRING'
+,p_heading_alignment=>'LEFT'
+,p_tz_dependent=>'N'
+,p_use_as_row_header=>'N'
+);
+wwv_flow_imp_page.create_worksheet_column(
+ p_id=>wwv_flow_imp.id(19844560675133581)
+,p_db_column_name=>'CREATED'
+,p_display_order=>7
+,p_column_identifier=>'G'
+,p_column_label=>'Created'
+,p_column_type=>'DATE'
+,p_heading_alignment=>'LEFT'
+,p_format_mask=>'SINCE'
+,p_tz_dependent=>'Y'
+,p_use_as_row_header=>'N'
+);
+wwv_flow_imp_page.create_worksheet_column(
+ p_id=>wwv_flow_imp.id(19844928119133581)
+,p_db_column_name=>'CREATED_BY'
+,p_display_order=>8
+,p_column_identifier=>'H'
+,p_column_label=>'Created By'
+,p_column_type=>'STRING'
+,p_heading_alignment=>'LEFT'
+,p_tz_dependent=>'N'
+,p_use_as_row_header=>'N'
+);
+wwv_flow_imp_page.create_worksheet_column(
+ p_id=>wwv_flow_imp.id(19845313440133581)
+,p_db_column_name=>'UPDATED'
+,p_display_order=>9
+,p_column_identifier=>'I'
+,p_column_label=>'Updated'
+,p_column_type=>'DATE'
+,p_heading_alignment=>'LEFT'
+,p_format_mask=>'SINCE'
+,p_tz_dependent=>'Y'
+,p_use_as_row_header=>'N'
+);
+wwv_flow_imp_page.create_worksheet_column(
+ p_id=>wwv_flow_imp.id(19845702450133581)
+,p_db_column_name=>'UPDATED_BY'
+,p_display_order=>10
+,p_column_identifier=>'J'
+,p_column_label=>'Updated By'
+,p_column_type=>'STRING'
+,p_heading_alignment=>'LEFT'
+,p_tz_dependent=>'N'
+,p_use_as_row_header=>'N'
+);
+wwv_flow_imp_page.create_worksheet_column(
+ p_id=>wwv_flow_imp.id(19846182216133582)
+,p_db_column_name=>'HTML_FIELD'
+,p_display_order=>11
+,p_column_identifier=>'K'
+,p_column_label=>'Html Field'
+,p_column_type=>'STRING'
+,p_heading_alignment=>'LEFT'
+,p_tz_dependent=>'N'
+,p_use_as_row_header=>'N'
+);
+wwv_flow_imp_page.create_worksheet_rpt(
+ p_id=>wwv_flow_imp.id(19848841053134117)
+,p_application_user=>'APXWS_DEFAULT'
+,p_report_seq=>10
+,p_report_alias=>'198489'
+,p_status=>'PUBLIC'
+,p_is_default=>'Y'
+,p_report_columns=>'ROWID:ID:SPECIALTY_ID:FIRST_NAME:LAST_NAME:ACCEPTING_PATIENTS_YN:CREATED:CREATED_BY:UPDATED:UPDATED_BY:HTML_FIELD'
+);
+wwv_flow_imp_page.create_page_plug(
+ p_id=>wwv_flow_imp.id(19848350080133587)
+,p_plug_name=>'Breadcrumb'
+,p_region_template_options=>'#DEFAULT#:t-BreadcrumbRegion--useBreadcrumbTitle'
+,p_component_template_options=>'#DEFAULT#'
+,p_plug_template=>wwv_flow_imp.id(19598344100196259)
+,p_plug_display_sequence=>10
+,p_plug_display_point=>'REGION_POSITION_01'
+,p_menu_id=>wwv_flow_imp.id(19488888859196170)
+,p_plug_source_type=>'NATIVE_BREADCRUMB'
+,p_menu_template_id=>wwv_flow_imp.id(19660428924196308)
+);
+wwv_flow_imp_page.create_page_button(
+ p_id=>wwv_flow_imp.id(19846649360133582)
+,p_button_sequence=>10
+,p_button_plug_id=>wwv_flow_imp.id(19841626704133574)
+,p_button_name=>'CREATE'
+,p_button_action=>'REDIRECT_PAGE'
+,p_button_template_options=>'#DEFAULT#'
+,p_button_template_id=>wwv_flow_imp.id(19658838592196307)
+,p_button_is_hot=>'Y'
+,p_button_image_alt=>'Create'
+,p_button_position=>'RIGHT_OF_IR_SEARCH_BAR'
+,p_button_redirect_url=>'f?p=&APP_ID.:5:&SESSION.::&DEBUG.:5'
+);
+wwv_flow_imp_page.create_page_da_event(
+ p_id=>wwv_flow_imp.id(19846981902133582)
+,p_name=>'Edit Report - Dialog Closed'
+,p_event_sequence=>10
+,p_triggering_element_type=>'REGION'
+,p_triggering_region_id=>wwv_flow_imp.id(19841626704133574)
+,p_bind_type=>'bind'
+,p_bind_event_type=>'apexafterclosedialog'
+);
+wwv_flow_imp_page.create_page_da_action(
+ p_id=>wwv_flow_imp.id(19847404807133584)
+,p_event_id=>wwv_flow_imp.id(19846981902133582)
+,p_event_result=>'TRUE'
+,p_action_sequence=>10
+,p_execute_on_page_init=>'N'
+,p_action=>'NATIVE_REFRESH'
+,p_affected_elements_type=>'REGION'
+,p_affected_region_id=>wwv_flow_imp.id(19841626704133574)
+);
+wwv_flow_imp.component_end;
+end;
+/

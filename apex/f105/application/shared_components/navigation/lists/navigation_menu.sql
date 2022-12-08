@@ -25,6 +25,15 @@ wwv_flow_imp_shared.create_list_item(
 ,p_list_item_current_type=>'TARGET_PAGE'
 );
 wwv_flow_imp_shared.create_list_item(
+ p_id=>wwv_flow_imp.id(19841261167133573)
+,p_list_item_display_sequence=>20
+,p_list_item_link_text=>'ait'
+,p_list_item_link_target=>'f?p=&APP_ID.:4:&APP_SESSION.::&DEBUG.:::'
+,p_list_item_icon=>'fa-table'
+,p_list_item_current_type=>'COLON_DELIMITED_PAGE_LIST'
+,p_list_item_current_for_pages=>'4,5'
+);
+wwv_flow_imp_shared.create_list_item(
  p_id=>wwv_flow_imp.id(19736182659196833)
 ,p_list_item_display_sequence=>10000
 ,p_list_item_link_text=>'Administration'
